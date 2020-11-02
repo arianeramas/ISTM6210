@@ -1,0 +1,559 @@
+/*Original CSS By Yuhan
+body {
+    background: #3e4144;
+}
+.form {
+    margin: 50px auto;
+    width: 300px;
+    padding: 30px 25px;
+    background: white;
+}
+h1.login-title {
+    color: #666;
+    margin: 0px auto 25px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+}
+.login-input {
+    font-size: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 25px;
+    height: 25px;
+    width: calc(100% - 23px);
+}
+.login-input:focus {
+    border-color:#6e8095;
+    outline: none;
+}
+.login-button {
+    color: #fff;
+    background: #55a1ff;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.link {
+    color: #666;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.link a {
+    color: #666;
+}
+h3 {
+    font-weight: normal;
+    text-align: center;
+}
+*/
+
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  padding: 0; margin: 0;
+}
+
+main{
+  position: relative;
+}
+
+.navbar {
+  opacity: 0.8;
+  margin-bottom: 0;
+  background-color: #fff;
+  transition: all 0.2s ease-out;
+}
+
+.navbar-container {
+	position: relative;
+}
+
+.navbar .navbar-nav li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #2E1C05;
+  transition: all 0.2s ease-out;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  transition: all 0.2s ease-out;
+	color: rgba(200,100,0,0.8);
+}
+
+.navbar-scroll {
+  opacity: 1;
+}
+
+#top-social-menu {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .navbar {
+    height: 120px;
+  }
+
+  .navbar-nav>li>a {
+    padding: 0;
+    margin-top: 35px;
+    margin-left: 50px;
+    line-height: 70px;
+  }
+
+  .navbar-brand {
+    font-size: 28px;
+    padding: 0;
+    height: 120px;
+    line-height: 120px;
+  }
+
+  #top-social-menu {
+    display: initial;
+  }
+
+  /* Navbar when scrolled */
+
+  .navbar-scroll {
+    height: 70px;
+  }
+
+  .navbar-scroll #top-social-menu {
+    display: none;
+    transition: all 0.2s ease-out;
+  }
+
+  .navbar-scroll .navbar-brand {
+    height: 70px;
+    line-height: 70px;
+  }
+
+  .navbar-scroll .navbar-nav>li>a {
+    opacity: 1;
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+/* # Hover Link Effect
+================================ */
+@media (min-width: 768px) {
+  .navbar-nav>li>a::after {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #2E1C05;
+    content: '';
+    opacity: 0;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    transform: translateY(-10px);
+  }
+
+  .navbar-nav>li>a:hover::after,
+  .navbar-nav>li>a:focus::after {
+    height: 2px;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* # Social menu
+================================ */
+
+#top-social-menu {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  font-size: 12px;
+  z-index: 101;
+  padding-right: 0px;
+  list-style: none;
+  color: #2E1C05;
+  transition: all 0.2s ease-out;
+}
+
+#top-social-menu li {
+  float: left;
+  padding: 10px 15px;
+}
+
+#top-social-menu li:last-child {
+  padding-right: 0;
+}
+
+#top-social-menu li a {
+  text-decoration: none;
+  color: #2E1C05;
+}
+
+#top-social-menu li a:hover {
+  text-decoration: none;
+  color: #543A1A;
+}
+
+#top-social-menu i {
+ 	font-size: 16px;
+
+  transition: all 0.2s ease-in;
+}
+
+#top-social-menu i:hover {
+  text-decoration: none;
+  color: #543A1A;
+}
+
+/* # Section Full Width Image
+================================ */
+
+.full-width-img {
+  background: url('http://i1159.photobucket.com/albums/p625/ivanrdvc/bg-cp-header_zps4ghnoxc7.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 100px;
+  height: 450px;
+  color: #fff;
+}
+
+.company_logo {
+  width:150px;
+  height:110px;
+
+}
+
+.cart_icon{
+width:50px;
+height:50px;
+}
+
+.cartButton {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 17px;
+  background: #42A5F6;
+  padding: 8px 10px 8px 12px;
+  border: none;
+  position: fixed;
+  top: 53px;
+}
+.cartButton:hover {
+  background: #0090FF;
+  color: black;
+}
+
+.box {
+	background: rgba(0, 0, 0, 0.4);
+  border: 3px solid #000;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+.subheading-text {
+  list-style: none;
+  font-size: 35px;
+  line-height: 50px;
+}
+
+@media (min-width: 768px) {
+
+  .full-width-img {
+    padding-top: 110px;
+    height: 1000px;
+  }
+
+  .subheading-text {
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  .box {
+    margin-top: 100px;
+    padding: 80px 20px;
+  }
+}
+/* # Section Black, White
+================================ */
+
+.section-black,
+.section-white {
+	padding: 50px 0;
+	color: #fff;
+	line-height: 1.7;
+}
+
+.section-black h3,
+.section-white h3 {
+	margin-bottom: 60px;
+}
+
+.section-black p,
+.section-white p {
+  margin-bottom: 60px;
+}
+
+.section-black {
+	background: linear-gradient(#363437, #121112);
+}
+
+.section-white {
+	background: linear-gradient(#ffffff, #f3f3f3);
+  color: #0e0d0e;
+}
+/*CSS for search Bar*/
+div#searchBox {
+    float: none;
+    text-align: center;
+    color: #777;
+    margin-top: 4em;
+    position: relative;
+    top: 250px;
+    right:90px;
+
+}
+
+#searchform {
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0 0;
+}
+
+#searchform input {
+    border: 0px;
+    background: transparent;
+    padding: 8px 10px 5px;
+    outline: none;
+}
+
+.mobile-form #searchform {
+    padding-top: 2.5px;
+    width: 215px;
+}
+
+div#searchBox #searchform {
+    border: 1px solid #ddd;
+    width: 238px;
+    padding-top: 1px;
+    display: inline-block;
+}
+
+div#searchBox #searchform input {
+    padding: 5px;
+    display: block;
+}
+
+#searchBox i.fa.fa-search {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.sb-icon-search,
+.sb-search-submit {
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sb-search-submit {
+    background: #fff;
+    /* IE needs this */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE 5-7 */
+    opacity: 0;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: 100;
+}
+
+div#searchBox #searchform .sb-icon-search {
+    /* color: #fff; */
+    /* background: #3f91c3; */
+    z-index: 90;
+    /* font-size: 22px; */
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+div#searchBox #searchform .sb-icon-search:before {
+    content: "\f002";
+}
+
+span#noEasy {
+    display: block;
+    /* overflow: hidden; */
+    position: relative;
+    width: 30px;
+    height: 30px;
+    float: left;
+    padding-left: 3px;
+}
+
+span#noEasy input {
+    width: 30px;
+    padding: 0 !important;
+}
+
+input#sbox {
+    line-height: 31px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+span#noEasy:hover {
+    color: #444;
+}
+.searchButton {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 17px;
+  background: #42A5F6;
+  padding: 7px 20px 7px 20px;
+  border: none;
+  position: fixed;
+  top: 300px;
+  right: 710px;
+
+}
+.searchButton:hover {
+  background: #0090FF;
+  color: black;
+}
+#searchBoxHeading {
+font-family: 'Hammersmith One', sans-serif;
+color: grey;
+text-align: center;
+position: fixed;
+top: 220px;
+left:600px;
+}
+/*CSS for featured Products*/
+/* 4 image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+.featuredProducts{
+  position: fixed;
+  top: 520px;
+  left: 400px;
+}
+#featuredProductsHeading{
+  font-family: 'Hammersmith One', sans-serif;
+  color: grey;
+  text-align: center;
+  position: fixed;
+  top: 400px;
+  left:660px;
+}
+.content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  height: auto;
+  width: 30%;
+}
+/*CSS for homepage*/
+#mainheading{
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 50pt;
+  font-weight: bold;
+  color: #0099ff;
+  text-align: center;
+  position: absolute;
+  top: 300px;
+  left:150px;
+}
+#mainPageSubtext{
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 20pt;
+  font-weight:lighter;
+  color: grey;
+  text-align: center;
+  position: absolute;
+  top: 420px;
+  left:150px;
+}
+.signUpButton {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 17px;
+  background: #42A5F6;
+  padding: 8px 20px 8px 20px;
+  border: none;
+  position: fixed;
+  top: 600px;
+  left:390px;
+}
+.signUpButton:hover {
+  background: #0090FF;
+  color: black;
+}
+.homePageImage{
+    background: none;
+    background-size: cover;
+    padding-top: 100px;
+    position: relative;
+    top: 50px;
+    height: 650px;
+    width:450px;
+    right:-1000px;
+    color: #fff;
+
+}
+#homepageContent{
+  position: relative;
+}
